@@ -1,0 +1,34 @@
+{
+  "name": "factorymod_tool",
+  "version": "1.0.0",
+  "description": "Turns a file structure into a factorymod config",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Longboyy/FactoryModTool.git"
+  },
+  "keywords": [
+    "factorymod",
+    "fm",
+    "civcraft"
+  ],
+  "author": "Longboyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Longboyy/FactoryModTool/issues"
+  },
+  "homepage": "https://github.com/Longboyy/FactoryModTool#readme",
+  "dependencies": {
+    "args": "^5.0.1",
+    "js-yaml": "^4.1.0",
+    "jsonfile": "^6.1.0"
+  }
+  "pkg": {
+    "scripts": "src/*.js",
+    "outputPath": "dist",
+    "targets": ["node14-linux-x64"]
+  }
+}
