@@ -1,6 +1,6 @@
 {
-  "name": "factorymod_tool",
-  "version": "1.0.0",
+  "name": "factorymodtool",
+  "version": "1.0.1",
   "description": "Turns a file structure into a factorymod config",
   "main": "./src/index.js",
   "scripts": {
@@ -26,11 +26,12 @@
     "js-yaml": "^4.1.0",
     "jsonfile": "^6.1.0"
   },
+  "bin": "./src/index.js",
   "pkg": {
     "scripts": "src/*.js",
     "outputPath": "dist",
     "targets": [
-      "node14-linux-x64"
+      "node14-linux-x64", "node14-macos-x64", "node14-win-x64"
     ]
   }
 }
