@@ -123,6 +123,11 @@ class FMConfig {
             this.#data.factories[factoryKey] = factory;
 
             const factoryRecipesPath = path.resolve(factoryFolderPath, "recipes");
+
+            if(!fs.existsSync(factoryRecipesPath)){
+                continue;
+            }
+
             const recipeFiles = getFiles(factoryRecipesPath).map(val => val.replace(/\.[^/.]+$/, ""))
             if(recipeFiles.length < 1){
                 continue;
